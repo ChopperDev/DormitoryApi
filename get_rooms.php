@@ -2,10 +2,10 @@
 // get_rooms.php
 header("Access-Control-Allow-Origin: *");
 
-$host = 'localhost'; // Database host
-$db_name = 'home'; // Database name
-$username = 'root'; // Database username
-$password = ''; // Database password
+$host = 'localhost'; // หรือที่อยู่เซิร์ฟเวอร์ฐานข้อมูลของคุณ
+$db = 'babydevg_home'; // ชื่อฐานข้อมูล
+$user = 'babydevg_home'; // ชื่อผู้ใช้
+$pass = 'ttpa8kHcfzmfhbtAjF3G'; // รหัสผ่าน
 
 $conn = new mysqli($host, $username, $password, $db_name);
 

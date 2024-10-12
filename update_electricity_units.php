@@ -1,8 +1,8 @@
 <?php
-$host = 'localhost';
-$db_name = 'home';
-$username = 'root';
-$password = '';
+$host = 'localhost'; // หรือที่อยู่เซิร์ฟเวอร์ฐานข้อมูลของคุณ
+$db = 'babydevg_home'; // ชื่อฐานข้อมูล
+$user = 'babydevg_home'; // ชื่อผู้ใช้
+$pass = 'ttpa8kHcfzmfhbtAjF3G'; // รหัสผ่าน
 
 // สร้างการเชื่อมต่อ
 $conn = new mysqli($host, $username, $password, $db_name);

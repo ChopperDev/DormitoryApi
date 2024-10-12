@@ -1,10 +1,10 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header('Content-Type: application/json');
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "home";
+$host = 'localhost'; // หรือที่อยู่เซิร์ฟเวอร์ฐานข้อมูลของคุณ
+$db = 'babydevg_home'; // ชื่อฐานข้อมูล
+$user = 'babydevg_home'; // ชื่อผู้ใช้
+$pass = 'ttpa8kHcfzmfhbtAjF3G'; // รหัสผ่าน
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 

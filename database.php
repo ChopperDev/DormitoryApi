@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost'; // หรือที่อยู่เซิร์ฟเวอร์ฐานข้อมูลของคุณ
-$db = 'home'; // ชื่อฐานข้อมูล
-$user = 'root'; // ชื่อผู้ใช้
-$pass = ''; // รหัสผ่าน
+$db = 'babydevg_home'; // ชื่อฐานข้อมูล
+$user = 'babydevg_home'; // ชื่อผู้ใช้
+$pass = 'ttpa8kHcfzmfhbtAjF3G'; // รหัสผ่าน
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8mb4", $user, $pass);
