@@ -1,0 +1,51 @@
+<?php
+// get_rooms.php
+header("Access-Control-Allow-Origin: *");
+
+$host = 'localhost'; // Database host
+$db_name = 'home'; // Database name
+$username = 'root'; // Database username
+$password = ''; // Database password
+
+$conn = new mysqli($host, $username, $password, $db_name);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Prepare an SQL statement to select all rooms
+// get_rooms.php
+header("Access-Control-Allow-Origin: *");
+
+$host = 'localhost'; // Database host
+$db_name = 'home'; // Database name
+$username = 'root'; // Database username
+$password = ''; // Database password
+
+$conn = new mysqli($host, $username, $password, $db_name);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Prepare an SQL statement to select all rooms
+$query = "SELECT * FROM rooms";
+$result = $conn->query($query);
+
+$rooms = [];
+if ($result->num_rows > 0) {
+    // Fetch data
+    while ($row = $result->fetch_assoc()) {
+        $rooms[] = $row;
+    }
+}
+
+// Set the content type to JSON and return the data
+header('Content-Type: application/json');
+echo json_encode($rooms);
+
+// Close the connection
+$conn->close();
+?>
