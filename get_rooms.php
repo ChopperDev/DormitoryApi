@@ -4,24 +4,8 @@ header("Access-Control-Allow-Origin: *");
 
 $host = 'localhost'; // หรือที่อยู่เซิร์ฟเวอร์ฐานข้อมูลของคุณ
 $db = 'babydevg_home'; // ชื่อฐานข้อมูล
-$user = 'babydevg_home'; // ชื่อผู้ใช้
-$pass = 'ttpa8kHcfzmfhbtAjF3G'; // รหัสผ่าน
-
-$conn = new mysqli($host, $username, $password, $db_name);
-
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-// Prepare an SQL statement to select all rooms
-// get_rooms.php
-header("Access-Control-Allow-Origin: *");
-
-$host = 'localhost'; // Database host
-$db_name = 'home'; // Database name
-$username = 'root'; // Database username
-$password = ''; // Database password
+$user = 'babydevg_chopper'; // ชื่อผู้ใช้
+$pass = '123456789'; // รหัสผ่าน
 
 $conn = new mysqli($host, $username, $password, $db_name);
 
